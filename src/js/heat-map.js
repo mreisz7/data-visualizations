@@ -13,31 +13,10 @@ var width = document.getElementById('container').clientWidth - 150;
 var height = document.getElementById('container').clientHeight - titleHeight - 100;
 
 // Define the color palette
-var colorPalette = [
-  '#a50026',
-  '#d73027',
-  '#f46d43',
-  '#fdae61',
-  '#fee090',
-  '#ffffbf',
-  '#e0f3f8',
-  '#abd9e9',
-  '#74add1',
-  '#4575b4',
-  '#313695'
-];
+var colors = ['#2C7BB6', '#00A6CA','#00CCBC','#90EB9D','#FFFF8C','#F9D057','#F29E2E','#E76818','#D7191C'];
 
-
-
-
-
-
-
-
-var url = 'https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json',
-  months = ['January','February','March','April','May','June','July','August','September','October','November','December'],
-  colors = ['#2C7BB6', '#00A6CA','#00CCBC','#90EB9D','#FFFF8C','#F9D057','#F29E2E','#E76818','#D7191C'],
-  margin = {top: 100,right: 20,bottom: 100,left: 60};
+// Define months for reference
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 var tooltip = d3.select('body').append('div')
   .attr('id', 'tooltip');

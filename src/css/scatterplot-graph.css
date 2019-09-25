@@ -28,6 +28,7 @@
 
 .main .container .dataVisContainer {
     position: absolute;
+    align-self: center;
 }
 
 #tooltip {
